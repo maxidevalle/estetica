@@ -171,4 +171,15 @@ a{
             padding-left: 600px;
         
         }
-    
+    .logo1{
+        filter: grayscale(100%);
+        transition: all 3s;
+
+    }
+    .logo1:hover {
+        filter: grayscale(0%);
+        transform: scale(1.2);
+    }
+    .ubi1:hover{
+        transform: scale(1.2);
+    }
