@@ -115,25 +115,37 @@ a{
     color: black;
 }
 @media screen and (min-width: 320px){
+    .logo2{
+        width: 40%;
+        
+    }
+    
+    .navbar{
+        
+            text-align: center;
+           
+    }
  #navegacion{
      display: grid;
      grid-template-columns: auto;
      grid-template-rows: auto;
      grid-template-areas: "header" "parrafo""footer";
+     
     
 
  }
+ .grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    grid-template-areas: "header " "parrafo" "footer";
+   
+    
+}
 
 @media screen and (min-width: 1200px){
-    .grid{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        gap: 10px;
-        grid-template-areas: "header " "parrafo" "footer";
-       
-        
-    }
+   
     #navegacion{
         display:grid;
         grid-template-columns: auto auto;
@@ -160,7 +172,15 @@ a{
     #navegacion{
         grid-area: navegacion;
     }
-    .menu{
+   .nav-item{
+    display: inline-block;
+    
+    
+   }
+    .logo2{
+        width: 70px;
+    }
+    {
         display: inline-block;
         padding-left: 10px;}
         .logo1 {
@@ -173,7 +193,7 @@ a{
         }
     .logo1{
         filter: grayscale(100%);
-        transition: all 3s;
+        transition: all 1s;
 
     }
     .logo1:hover {
@@ -183,3 +203,16 @@ a{
     .ubi1:hover{
         transform: scale(1.2);
     }
+ .menu {
+    display: flex;
+    display: inline-block;
+    margin: 4px;
+    justify-content: center;
+    padding-left: 0px;
+ }
+ li{
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    padding-left: 0px;
+ }
